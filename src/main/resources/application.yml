@@ -1,0 +1,13 @@
+server.port: 8080
+new-web-pay:
+  key: 'your-key'
+  iv: 'your-iv'
+  mid: 'your-mid'
+  #  ??api
+  pay-url: https://ccore.newebpay.com/MPG/mpg_gatewa
+  #  ??????
+  query-trade-info-url: https://ccore.newebpay.com/API/QueryTradeInfo
+  #  ????
+  close-url: https://ccore.newebpay.com/API/CreditCard/Close
+  #  ????url
+  notify-url: 'your-notify-url'

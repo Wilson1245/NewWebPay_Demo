@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewebPay Payment Form</title>
+</head>
+<body>
+
+<h2>藍新金流付款表單</h2>
+<form method="POST" action="https://ccore.newebpay.com/MPG/mpg_gateway" id="newebpayForm">
+  <!-- Merchant ID -->
+  <label for="merchantID">MID:</label>
+  <input type="text" name="MerchantID" id="merchantID" placeholder="輸入 MerchantID" required><br>
+
+  <!-- Version -->
+  <label for="version">Version:</label>
+  <input type="text" name="Version" id="version" value="2.0" required><br>
+
+  <!-- TradeInfo -->
+  <label for="tradeInfo">TradeInfo:</label>
+  <textarea name="TradeInfo" id="tradeInfo" rows="4" cols="50" placeholder="輸入 TradeInfo" required></textarea><br>
+
+  <!-- TradeSha -->
+  <label for="tradeSha">TradeSha:</label>
+  <input type="text" name="TradeSha" id="tradeSha" placeholder="輸入 TradeSha" required><br>
+
+  <!-- 提交按鈕 -->
+  <input type="submit" value="送出交易">
+</form>
+
+</body>
+</html>
